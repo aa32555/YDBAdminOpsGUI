@@ -41,7 +41,7 @@ ydb-gui-test:
     - ./bats-core/install.sh /usr
     - wget https://gitlab.com/YottaDB/DB/YDB/raw/master/sr_unix/ydbinstall.sh
     - chmod +x ./ydbinstall.sh
-    - ./ydbinstall.sh --utf8 default --verbose --octo
+    - ./ydbinstall.sh --utf8 default --verbose --octo --from-source repo https://github.com/aa32555/YDB.git
     - source $(pkg-config --variable=prefix yottadb)/ydb_env_set
     - ./tools/ci/octo_setup.sh
     - mkdir -p tests/results

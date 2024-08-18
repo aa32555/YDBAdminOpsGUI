@@ -36,7 +36,7 @@ ydb-gui-test:
     - apt-get install -y libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 
     - apt-get install -y --no-install-recommends build-essential cmake bison flex xxd libreadline-dev libssl-dev libconfig-dev
     - apt-get install -y --no-install-recommends libcmocka-dev
-    - apt-get install -y --no-install-recommends default-jdk expect golang-go curl
+    - apt-get install -y --no-install-recommends default-jdk expect golang-go curl libgcrypt20-dev
     - git clone https://github.com/bats-core/bats-core.git
     - ./bats-core/install.sh /usr
     - wget https://gitlab.com/YottaDB/DB/YDB/raw/master/sr_unix/ydbinstall.sh
